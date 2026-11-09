@@ -4,12 +4,10 @@ import pandas as pd
 import pickle
 import joblib
 # Load the trained model
-model = joblib.load('linear_regression_model.pkl') # Changed model filename and
-loading method
+model = joblib.load('linear_regression_model.pkl') # Changed model filename and loading method
 # Streamlit app title
 st.title('Prediksi Tagihan Listrik Jakarta')
-st.write('Aplikasi untuk memprediksi jumlah tagihan listrik berdasarkan
-parameter yang diberikan.')
+st.write('Aplikasi untuk memprediksi jumlah tagihan listrik berdasarkan parameter yang diberikan.')
 # Sidebar for user inputs
 st.sidebar.header('Input Parameter')
 def user_input_features():
